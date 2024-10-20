@@ -49,10 +49,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "pry"
   gem "rspec-rails"
-  gem "capybara"
   gem "launchy"
-  gem "shoulda-matchers"
-  gem "simplecov"
 end
 
 group :development do
@@ -64,5 +61,11 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  gem "shoulda-matchers"
+  gem "capybara"
+  gem "simplecov"
 end
 
