@@ -2,6 +2,6 @@
 <% @paintings.each do |painting| %>
   <p><%= painting.title %></p>
   <p><%= painting.price %></p>
-  <img src="<%= asset_path painting.image %>" alt="<%= painting.title %>">
+  <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
   <p><%= painting.description %></p>
 <% end %>
