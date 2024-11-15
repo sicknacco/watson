@@ -11,7 +11,7 @@ RSpec.describe 'Order', type: :feature do
   describe 'user places an order' do
     it 'creates a new order' do
       visit root_path
-      click_on "Order #{@painting1.title}"
+      click_button "Order #{@painting1.title}"
 
       expect current_path.to eq(new_order_path)
       expect(page).to have_content(@painting1.title)
