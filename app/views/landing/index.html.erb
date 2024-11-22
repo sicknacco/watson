@@ -4,5 +4,4 @@
   <p><%= painting.price %></p>
   <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
   <p><%= painting.description %></p>
-  <p><%= button_to "Order #{painting.title}", new_order_path %></p>
 <% end %>
