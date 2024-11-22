@@ -9,7 +9,7 @@
 #   end
 # Painting.destroy_all
 
-# Painting.create(title: 'Painting 1', price: 100, image: 'pics/matt_1.jpg', description: 'Description 1')
-# Painting.create(title: 'Painting 2', price: 150, image: 'pics/matt_2.jpg', description: 'Description 2')
-# Painting.create(title: 'Painting 3', price: 286795, image: 'pics/matt_3.jpg', description: 'Description 3')
+# Painting.create(title: 'Painting 1', price: 0, image: 'pics/matt_1.jpg')
+# Painting.create(title: 'Painting 2', price: 0, image: 'pics/matt_2.jpg')
+# Painting.create(title: 'Painting 3', price: 0, image: 'pics/matt_3.jpg')
 # Painting.create(title: 'Painting 4', price: 286795, image: 'pics/matt_4.jpg', description: 'Description 3')

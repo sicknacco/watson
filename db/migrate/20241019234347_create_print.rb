@@ -3,7 +3,6 @@ class CreatePrint < ActiveRecord::Migration[7.1]
     create_table :paintings do |t|
       t.string :title
       t.float :price
-      t.string :description
       t.string :image
 
       t.timestamps

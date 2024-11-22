@@ -1,3 +1,3 @@
 class Painting < ApplicationRecord
-  validates :title, :price, :image, :description, presence: true
+  validates :title, :price, :image, presence: true
 end
