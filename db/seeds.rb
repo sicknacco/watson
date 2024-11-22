@@ -7,9 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-# Painting.destroy_all
+Painting.destroy_all
 
-# Painting.create(title: 'Painting 1', price: 0, image: 'pics/matt_1.jpg')
-# Painting.create(title: 'Painting 2', price: 0, image: 'pics/matt_2.jpg')
-# Painting.create(title: 'Painting 3', price: 0, image: 'pics/matt_3.jpg')
+Painting.create(title: 'Mollow', price: 0, image: 'pics/mollow.jpg')
+Painting.create(title: 'Sunset', price: 0, image: 'pics/sunset.jpg')
+Painting.create(title: 'Secret Canyon', price: 0, image: 'pics/secret_canyon.jpg')
 # Painting.create(title: 'Painting 4', price: 286795, image: 'pics/matt_4.jpg', description: 'Description 3')
