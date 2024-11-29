@@ -1,7 +1,7 @@
-<h2>Welcome message or signature here</h2>
-<img class="signature" src="/assets/pics/sig2.pdf">
+<img class="signature" src="/assets/pics/sig2.png">
 <% @paintings.each do |painting| %>
   <p><%= painting.title %></p>
   <p><%= painting.price %></p>
   <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
 <% end %>
+<img class="signature" src="/assets/pics/sig1.png">
