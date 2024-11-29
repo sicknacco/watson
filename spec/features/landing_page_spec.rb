@@ -24,5 +24,9 @@ RSpec.describe 'Landing Page', type: :feature do
       expect(page).to have_css("img[src*='pics/matt_3.jpg']")
     end
     
+    it 'displays contact links on landing page' do
+      visit root_path
+      expect(page).to have_link('Instagram', href: 'https://www.instagram.com/andrewpatrickwatson/')
+    end
   end
 end
