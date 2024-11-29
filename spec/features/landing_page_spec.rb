@@ -29,6 +29,7 @@ RSpec.describe 'Landing Page', type: :feature do
 
       expect(page).to have_content('Interested? Reach out!')
       expect(page).to have_link('Instagram', href: 'https://www.instagram.com/andrewpatrickwatson/')
+      #The above link works on localhost, but it is not actually visible on the page.
     end
   end
 end
