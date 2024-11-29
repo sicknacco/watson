@@ -1,7 +1,11 @@
-<h2>Welcome message or signature here</h2>
+<img class="signature" src="/assets/pics/sig2.png">
 <% @paintings.each do |painting| %>
   <p><%= painting.title %></p>
   <p><%= painting.price %></p>
   <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
-  <p><%= painting.description %></p>
 <% end %>
+<p>
+<h4>Interested? Reach out!</h4>
+<p>
+  <a href="https://www.instagram.com/andrewpatrickwatson/">
+<img class="signature" src="/assets/pics/sig1.png">

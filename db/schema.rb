@@ -17,7 +17,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_10_19_234347) do
   create_table "paintings", force: :cascade do |t|
     t.string "title"
     t.float "price"
-    t.string "description"
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
