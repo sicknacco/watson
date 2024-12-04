@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.signature:first-of-type {
+  height: auto; /* Maintains the aspect ratio */
+  max-width: 600px; /* Optional: adjust max width as needed */
+}
+
+.paintings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.painting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px; /* Adjust width as needed */
+}
+
+.painting img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
