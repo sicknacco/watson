@@ -1,11 +1,60 @@
-<img class="signature" src="/assets/pics/sig2.png">
-<% @paintings.each do |painting| %>
-  <p><%= painting.title %></p>
-  <p><%= painting.price %></p>
-  <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
-<% end %>
-<p>
-<h4>Interested? Reach out!</h4>
-<p>
-  <a href="https://www.instagram.com/andrewpatrickwatson/">
-<img class="signature" src="/assets/pics/sig1.png">
+<div class="container">
+  <img class="signature" src="/assets/pics/sig2.png" alt="Signature">
+  <div class="paintings">
+    <% @paintings.each do |painting| %>
+      <div class="painting">
+        <p class="title"><%= painting.title %></p>
+        <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
+      </div>
+    <% end %>
+  </div>
+  <div class="contact">
+    <h4>Interested? Reach out!</h4>
+    <a href="https://www.instagram.com/andrewpatrickwatson/" target="_blank">
+      <img class="signature" src="/assets/pics/sig1.png" alt="Instagram">
+    </a>
+  </div>
+</div>
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.paintings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.painting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px; /* Adjust width as needed */
+}
+
+.painting img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
