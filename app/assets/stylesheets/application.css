@@ -30,9 +30,9 @@
 
 .paintings {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column; /* Ensures items stack vertically */
+  align-items: center; /* Centers the column of items horizontally */
+  gap: 20px; /* Adds space between paintings */
 }
 
 .painting {
