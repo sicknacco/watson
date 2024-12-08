@@ -73,3 +73,15 @@
   text-decoration: underline; /* Add an underline on hover */
   color: #0056a1; /* Darker blue for hover */
 }
+
+.contact-header {
+  display: flex;
+  align-items: center; /* Aligns text and logo vertically */
+  gap: 10px; /* Adds spacing between the text and the logo */
+}
+
+.instagram-logo {
+  width: 40px; /* Size of the logo */
+  height: auto;
+  cursor: pointer;
+}
