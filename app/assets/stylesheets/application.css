@@ -23,9 +23,16 @@
   padding: 20px;
 }
 
-.signature:first-of-type {
-  height: auto; /* Maintains the aspect ratio */
-  max-width: 600px; /* Optional: adjust max width as needed */
+.signature.top {
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+}
+
+.signature.bottom {
+  width: 80%; /* Make it smaller for a decorative touch */
+  height: auto;
+  max-width: 600px;
 }
 
 .paintings {
@@ -50,11 +57,19 @@
 }
 
 .contact {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stacks the link and image vertically */
+  align-items: center; /* Centers the content horizontally */
 }
 
-.contact img {
-  width: 50px; /* Adjust size as needed */
-  height: auto;
-  cursor: pointer;
+.contact a {
+  display: inline-block;
+  color: #0077cc; /* Instagram blue */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it pop */
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Add an underline on hover */
+  color: #0056a1; /* Darker blue for hover */
 }
