@@ -1,8 +1,9 @@
 # README
 
 Todo:
-- Make titles bigger
 - Add back prices $30 each
+- Clickable pic to enlarge
+- Make titles bigger - done
 - Make pics bigger - done
 - Add price - 30 bucks each
 - Fix instagram link - done

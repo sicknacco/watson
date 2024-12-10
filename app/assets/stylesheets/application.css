@@ -49,6 +49,12 @@
   max-width: 300px; /* Adjust width as needed */
 }
 
+.painting .title {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the text bold */
+  margin-bottom: 10px; /* Adds spacing below the title */
+}
+
 .painting img {
   max-width: 100%;
   height: auto;
