@@ -50,9 +50,10 @@
 }
 
 .painting .title {
-  font-size: 1.5rem; /* Adjust the size as needed */
-  font-weight: bold; /* Makes the text bold */
-  margin-bottom: 10px; /* Adds spacing below the title */
+  font-size: 1.5rem; /* Keeps the larger size */
+  font-weight: bold; /* Ensures the text remains bold */
+  text-decoration: underline; /* Adds the underline */
+  margin-bottom: 10px; /* Keeps the spacing below the title */
 }
 
 .painting img {
