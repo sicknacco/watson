@@ -61,6 +61,14 @@
   height: auto;
   border: 1px solid #ccc;
   border-radius: 8px;
+  cursor: pointer; /* Indicates it's clickable */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.painting img.enlarged {
+  transform: scale(1.5); /* Enlarges the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+  z-index: 10; /* Ensures it appears on top */
 }
 
 .contact {
