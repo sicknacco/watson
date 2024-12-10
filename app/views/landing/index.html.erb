@@ -4,6 +4,7 @@
     <% @paintings.each do |painting| %>
       <div class="painting">
         <p class="title"><%= painting.title %></p>
+        <p class="price"><%= painting.price %></p>
         <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
       </div>
     <% end %>
