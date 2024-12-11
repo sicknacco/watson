@@ -1,7 +1,8 @@
 # README
 
 Todo:
-- Add back prices $30 each
+- Deploy
+- Add back prices $30 each - done
 - Clickable pic to enlarge - done
 - Make titles bigger - done
 - Make pics bigger - done
