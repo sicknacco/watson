@@ -9,7 +9,6 @@
 #   end
 Painting.destroy_all
 
-Painting.create(title: 'Mollow', price: 0, image: 'pics/mollow.jpg')
-Painting.create(title: 'Sunset', price: 0, image: 'pics/sunset.jpg')
-Painting.create(title: 'Secret Canyon', price: 0, image: 'pics/secret_canyon.jpg')
-# Painting.create(title: 'Painting 4', price: 286795, image: 'pics/matt_4.jpg', description: 'Description 3')
+Painting.create(title: 'Mollow', price: 30, image: 'pics/mollow.jpg')
+Painting.create(title: 'Sunset', price: 30, image: 'pics/sunset.jpg')
+Painting.create(title: 'Secret Canyon', price: 30, image: 'pics/secret_canyon.jpg')

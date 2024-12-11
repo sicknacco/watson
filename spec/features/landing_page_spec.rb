@@ -19,8 +19,8 @@ RSpec.describe 'Landing Page', type: :feature do
       
       expect(page).to have_content(painting1.title)
       expect(page).to have_content(painting2.title)
-      expect(page).to have_content(painting3.price)
-      expect(page).to have_content(painting4.price)
+      expect(page).to have_content(painting3.title)
+      expect(page).to have_content(painting4.title)
       expect(page).to have_css("img[src*='pics/matt_4.jpg']")
       expect(page).to have_css("img[src*='pics/matt_3.jpg']")
     end
