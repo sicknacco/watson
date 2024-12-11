@@ -4,19 +4,21 @@
     <% @paintings.each do |painting| %>
       <div class="painting">
         <p class="title"><%= painting.title %></p>
-        <p class="price"><%= painting.price %></p>
         <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
       </div>
     <% end %>
   </div>
   <div class="contact">
     <div class="contact-header">
-      <h4>Interested? Reach out on Instagram!</h4>
-      <a href="https://www.instagram.com/andrewpatrickwatson/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-            alt="Instagram" 
-            class="instagram-logo">
-      </a>
+      <h4 class="price">All Prints $30</h4>
+      <div class="instagram-link">
+        <h4>Interested? Reach out on Instagram!</h4>
+        <a href="https://www.instagram.com/andrewpatrickwatson/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+              alt="Instagram" 
+              class="instagram-logo">
+        </a>
+      </div>
     </div>
     <img class="signature bottom" src="/assets/pics/sig1.png" alt="Decorative Signature">
   </div>

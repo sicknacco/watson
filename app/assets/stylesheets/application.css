@@ -14,7 +14,7 @@
  *= require_self
  */
 
- .container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,20 +61,36 @@
   height: auto;
   border: 1px solid #ccc;
   border-radius: 8px;
-  cursor: pointer; /* Indicates it's clickable */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
-}
-
-.painting img.enlarged {
-  transform: scale(1.5); /* Enlarges the image */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
-  z-index: 10; /* Ensures it appears on top */
+  cursor: pointer; /* This will show the hand cursor on hover */
 }
 
 .contact {
   display: flex;
   flex-direction: column; /* Stacks the link and image vertically */
   align-items: center; /* Centers the content horizontally */
+}
+
+.contact-header {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack the title and subtitle vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.price {
+  margin-bottom: 10px; /* Adds space between the price and the Instagram text */
+  font-weight: bold; /* Optional: makes the price bold */
+}
+
+.contact-header .instagram-link {
+  display: flex; /* Ensure the Instagram logo and text are aligned horizontally */
+  align-items: center; /* Align text and logo vertically */
+  gap: 10px; /* Adds space between the text and the logo */
+}
+
+.instagram-logo {
+  width: 40px; /* Size of the logo */
+  height: auto;
+  cursor: pointer;
 }
 
 .contact a {
@@ -87,16 +103,4 @@
 .contact a:hover {
   text-decoration: underline; /* Add an underline on hover */
   color: #0056a1; /* Darker blue for hover */
-}
-
-.contact-header {
-  display: flex;
-  align-items: center; /* Aligns text and logo vertically */
-  gap: 10px; /* Adds spacing between the text and the logo */
-}
-
-.instagram-logo {
-  width: 40px; /* Size of the logo */
-  height: auto;
-  cursor: pointer;
 }
