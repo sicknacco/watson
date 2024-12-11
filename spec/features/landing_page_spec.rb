@@ -18,18 +18,18 @@ RSpec.describe 'Landing Page', type: :feature do
       visit root_path
       
       expect(page).to have_content(painting1.title)
-      expect(page).to have_content(painting2.price)
-      expect(page).to have_content(painting3.price)
+      expect(page).to have_content(painting2.title)
+      expect(page).to have_content(painting3.title)
       expect(page).to have_content(painting4.title)
+      expect(page).to have_css("img[src*='pics/matt_4.jpg']")
       expect(page).to have_css("img[src*='pics/matt_3.jpg']")
     end
     
     it 'displays contact links on landing page' do
       visit root_path
 
-      expect(page).to have_content('Interested? Reach out!')
+      expect(page).to have_content('Interested? Reach out on Instagram!')
       expect(page).to have_link('Instagram', href: 'https://www.instagram.com/andrewpatrickwatson/')
-      #The above link works on localhost, but it is not actually visible on the page.
     end
   end
 end

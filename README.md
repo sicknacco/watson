@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Todo:
+- Deploy
+- Add back prices $30 each - done
+- Clickable pic to enlarge - done
+- Make titles bigger - done
+- Make pics bigger - done
+- Add price - 30 bucks each
+- Fix instagram link - done
+- Fix bottom signature - done
+- Tweak top signature - done
 
-Things you may want to cover:
+Wishlist
+- Background
+  - need pngs for signatures
+- Andrew to upload and delete
+- Place order, including taking payment
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+.painting img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
