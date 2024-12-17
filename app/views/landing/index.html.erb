@@ -1,10 +1,10 @@
 <div class="container">
-  <img class="signature top" src="/assets/pics/sig2.png" alt="Artist Signature">
+  <%= image_tag "pics/sig2.png", class: "signature top", alt: "Artist Signature" %>
   <div class="paintings">
     <% @paintings.each do |painting| %>
       <div class="painting">
         <p class="title"><%= painting.title %></p>
-        <img class="painting-image" src="/assets/pics/<%= painting.image.split('/').last %>" alt="<%= painting.title %>">
+        <%= image_tag "pics/#{painting.image.split('/').last}", class: "painting-image", alt: painting.title %>
       </div>
     <% end %>
   </div>
@@ -20,6 +20,6 @@
         </a>
       </div>
     </div>
-    <img class="signature bottom" src="/assets/pics/sig1.png" alt="Decorative Signature">
+    <%= image_tag "pics/sig1.png", class: "signature bottom", alt: "Decorative Signature" %>
   </div>
 </div>
