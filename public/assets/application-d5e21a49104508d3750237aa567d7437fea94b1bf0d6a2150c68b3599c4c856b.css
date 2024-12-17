@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.signature.top {
+  width: 80%;
+  height: auto;
+  max-width: 600px;
+}
+
+.signature.bottom {
+  width: 80%; /* Make it smaller for a decorative touch */
+  height: auto;
+  max-width: 600px;
+}
+
+.paintings {
+  display: flex;
+  flex-direction: column; /* Ensures items stack vertically */
+  align-items: center; /* Centers the column of items horizontally */
+  gap: 20px; /* Adds space between paintings */
+}
+
+.painting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Adjust width as needed */
+}
+
+.painting .title {
+  font-size: 1.5rem; /* Keeps the larger size */
+  font-weight: bold; /* Ensures the text remains bold */
+  text-decoration: underline; /* Adds the underline */
+  margin-bottom: 10px; /* Keeps the spacing below the title */
+}
+
+.painting img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer; /* This will show the hand cursor on hover */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column; /* Stacks the link and image vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+
+.contact-header {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack the title and subtitle vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.price {
+  margin-bottom: 10px; /* Adds space between the price and the Instagram text */
+  font-weight: bold; /* Optional: makes the price bold */
+}
+
+.contact-header .instagram-link {
+  display: flex; /* Ensure the Instagram logo and text are aligned horizontally */
+  align-items: center; /* Align text and logo vertically */
+  gap: 10px; /* Adds space between the text and the logo */
+}
+
+.instagram-logo {
+  width: 40px; /* Size of the logo */
+  height: auto;
+  cursor: pointer;
+}
+
+.contact a {
+  display: inline-block;
+  color: #0077cc; /* Instagram blue */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it pop */
+}
+
+.contact a:hover {
+  text-decoration: underline; /* Add an underline on hover */
+  color: #0056a1; /* Darker blue for hover */
+}
